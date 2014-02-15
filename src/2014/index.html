@@ -22,19 +22,21 @@
                 <td width="600" valign="top" align="justify" style="padding: 0 15px">
                   <p mc:edit="location">À Toulouse, le *|DATE:|*</p>
 
-                  <h1 mc:edit="title" style="font-weight:normal; font-size:30px; color: #f64b3a; line-height: normal;">Titre</h1>
+                  <div mc:repeatable>
+                    <h1 mc:edit="section_title" style="font-weight:normal; font-size:30px; color: #f64b3a; line-height: normal;">Titre</h1>
 
-                  <div mc:edit="content" mc:repeatable="">
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
-                      ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
-                      <strong>Mauris placerat
-                        eleifend leo.</strong> Quisque sit amet est et sapien ullamcorper pharetra.
-                    </p>
+                    <div mc:edit="section_content">
+                      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+                        ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+                        <strong>Mauris placerat
+                          eleifend leo.</strong> Quisque sit amet est et sapien ullamcorper pharetra.
+                      </p>
 
-                    <p>Tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis.
-                      Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat.
-                      <a href="#" style="font-family:Ruluko, Helvetica, Arial, sans-serif; font-size:16px; color: #f64b3a;" target="_blank">Nam dui mi, tincidunt quis</a>, accumsan porttitor, facilisis luctus, metus.
-                    </p>
+                      <p>Tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis.
+                        Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat.
+                        <a href="#" style="font-family:Ruluko, Helvetica, Arial, sans-serif; font-size:16px; color: #f64b3a;" target="_blank">Nam dui mi, tincidunt quis</a>, accumsan porttitor, facilisis luctus, metus.
+                      </p>
+                    </div>
                   </div>
                 </td>
               </tr>
@@ -46,7 +48,7 @@
             </table>
           </td>
         </tr>
-        <tr>
+        <tr mc:hideable>
           <td valign="top">
             <table cellpadding="0" cellspacing="0" border="0" width="100%" style="padding-top: 60px; font-family:Ruluko, Helvetica, Arial, sans-serif; font-size:16px; line-height: 20px; color: #3f3033;">
               <tr>
